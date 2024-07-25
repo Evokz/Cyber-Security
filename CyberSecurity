@@ -1,0 +1,40 @@
+print("Bem vindo, logo abaixo, cadastre sua senha!")
+l = ('-' * 30)
+print(l)
+print(l)
+senha = input("Digite sua nova senha: ")
+print("Muito bem, agora tente entrar com a sua recente senha criada!")
+password = senha
+
+max_attempts = 5
+attempts = 0
+
+while attempts < max_attempts:
+    sen = input("Digite sua senha nova: ")
+    if sen == password:
+        print("Parabéns, você entrou no site!")
+        senita = input("Digite sua outra senha que servirá para você entrar dentro do nosso app: ")
+        print("Agora você pode acessar nossa área de colaboradores, acesse ela com esta senha!")
+
+        while attempts < max_attempts:
+            p = input("Digite a senha: ")
+            if p == senita:
+                print("Parabéns, acessou a área de colaboradores!")
+                print("Agora você terá acesso ao nosso guia de CyberSegurança!")
+                print("Acesse às políticas da empresa!")
+                break
+            else:
+                attempts += 1
+                if attempts < max_attempts:
+                    print("Senha incorreta. Tente novamente.")
+                else:
+                    print("Número máximo de tentativas alcançado. Programa encerrado.")
+                    break
+        break
+
+    else:
+        attempts += 1
+        if attempts < max_attempts:
+            print("Senha incorreta. Tente novamente.")
+        else:
+            print("Número máximo de tentativas alcançado. Programa encerrado.")
