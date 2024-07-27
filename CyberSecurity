@@ -28,7 +28,7 @@ while attempts < max_attempts:
                 if attempts < max_attempts:
                     print("Senha incorreta. Tente novamente.")
                 else:
-                    print("Número máximo de tentativas alcançado. Programa encerrado.Tente ")
+                    print("Número máximo de tentativas alcançado. Programa encerrado.Tente novamente reiniciando ")
                     break
         break
 
